@@ -1,13 +1,18 @@
+
 /*
  * Menu.cpp
  *
  *  Created on: May 22, 2016
  *      Author: raydelto
  */
-
 #include "Menu.h"
+#include "List.h"
+#include "Element.h"
 #include <iostream>
+#include <cstdlib>
 using namespace std;
+
+List* list = new List();
 
 Menu::Menu()
 {
@@ -67,20 +72,32 @@ void Menu::routeAction(int option)
 
 void Menu::listItems()
 {
-	//TODO: Implement this
-	cout << "Implement  Menu::listItems" << endl;
+	Element* i = list -> getFirst();
+	while (i != NULL)
+	{
+
+		cout << i -> getName() << endl;
+		i = i -> getNext();
+	}
 }
 
 void Menu::addItems()
 {
-	//TODO: Implement this
-	cout << "Implement  Menu::addItems" << endl;
+	string name;
+
+	cout << "Type the item Name: ";
+	cin >> name;
+
+	Element* item = new Element(name);
+
+	list -> add(item);
+	cout << "Item added successfully" << endl;
+
 }
 
 void Menu::removeItems()
 {
-	//TODO: Implement this
-	cout << "Implement  Menu::removeItems" << endl;
+    cout << "sorry it cant no be remove" << endl;
 }
 
 void Menu::show()
@@ -89,7 +106,7 @@ void Menu::show()
 	do
 	{
 		clearScreen();
-		cout << "ITLA Shopping List" << endl;
+		cout << "Shopping List" << endl;
 		cout << "1- List items" << endl;
 		cout << "2- Add Item" << endl;
 		cout << "3- Remove Item" << endl;

@@ -1,0 +1,24 @@
+# depslib dependency file v1.0
+1467675342 source:c:\users\donato\desktop\6to cuatrimestre\estructura de datos\clases\shopping_list_itla\element.cpp
+	"Element.h"
+	<cstdlib>
+
+1467835211 c:\users\donato\desktop\6to cuatrimestre\estructura de datos\clases\shopping_list_itla\element.h
+	<string>
+
+1467677612 source:c:\users\donato\desktop\6to cuatrimestre\estructura de datos\clases\shopping_list_itla\list.cpp
+	"List.h"
+	"Element.h"
+	<iostream>
+	<cstdlib>
+
+1467677026 c:\users\donato\desktop\6to cuatrimestre\estructura de datos\clases\shopping_list_itla\list.h
+	"Element.h"
+
+1465257294 source:c:\users\donato\desktop\6to cuatrimestre\estructura de datos\clases\shopping_list_itla\main.cpp
+	<iostream>
+	"Menu.h"
+
+1467676976 c:\users\donato\desktop\6to cuatrimestre\estructura de datos\clases\shopping_list_itla\menu.h
+	"List.h"
+

@@ -1,3 +1,4 @@
+
 /*
  * List.h
  *
@@ -14,6 +15,12 @@ class List
 		List();
 		void add(Element* element);
 		void remove(int index);
+
+	 Element* getFirst()
+	 {
+	     return _first;
+     }
+
 	private:
 		Element* _first;
 		Element* _last;
